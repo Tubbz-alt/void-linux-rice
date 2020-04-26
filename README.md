@@ -1,10 +1,10 @@
 ## README
 
-[wallpaper](https://unsplash.com/photos/ciO5L8pin8A)
+[wallpaper from unsplash](https://unsplash.com/photos/ciO5L8pin8A)
 
-![scrot](scrots/scrot1.png)
-![scrot](scrots/scrot2.png)
 ![scrot](scrots/scrot3.png)
+![scrot](scrots/scrot2.png)
+![scrot](scrots/scrot1.png)
 
 update the installation and enable nonfree repos for proprietary nvidia driver
 
@@ -20,11 +20,11 @@ these are the packages you need to install on void to get my setup up and runnin
 sudo xbps-install -S lemonbar rofi bspwm sxhkd rxvt-unicode xorg-minimal xorg-fonts neofetch xwallpaper dunst picom ranger pywal zathura zathura-pdf-poppler git ImageMagick neovim cmark pulseaudio pavucontrol terminus-font stalonetray curl nodejs betterlockscreen redshift sxiv redshift-gtk w3m lxappearance papirus-icon-theme pcmanfm xarchiver gvfs p7zip libunarr xdo xtitle xclock dhcpcd-gtk scrot pfetch
 ```
 
-get vimplug up and running
+get vimplug up and running after installing neovim
 
 ``curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim``
 
-inside of vim just execute ``:PlugInstall``
+inside of neovim just execute ``:PlugInstall``
 
 
 ### explanation of packages
@@ -101,4 +101,3 @@ xarchiver (gui archive manager)
 dhcpcd-gtk (gui for network management with dhcpcd)
 
 scrot  (screentshot utility)
-
