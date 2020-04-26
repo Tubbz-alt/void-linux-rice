@@ -39,7 +39,7 @@ xwallpaper --zoom $HOME/wallpaper.jpg # restore wallpaper
 
 # xwallpaper --zoom $HOME/Pictures/wallpapers/lofi/spacerecordsnwt.png
 
-betterlockscreen -u $HOME/wallpaper.jpg
+betterlockscreen -u $HOME/wallpaper.jpg &
 
 xrdb ~/.Xresources # reload XResources colors
 

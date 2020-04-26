@@ -30,20 +30,29 @@ urxvt*urgentOnBell: true
 ! urxvt.boldFont:    			  xft:Source Code Pro:bold:size=7
 
 ! Terminus
-urxvt.font:                 xft:Terminus:style=Medium:pixelsize=12
-urxvt.boldFont:             xft:Terminus:style=Medium:pixelsize=12
-urxvt.italicFont:           xft:Terminus:style=Medium:pixelsize=12
-urxvt.boldItalicFont:       xft:Terminus:style=Medium:pixelsize=12
+urxvt.font:                 xft:Terminus:style=Medium:pixelsize=14
+urxvt.boldFont:             xft:Terminus:style=Medium:pixelsize=14
+urxvt.italicFont:           xft:Terminus:style=Medium:pixelsize=14
+urxvt.boldItalicFont:       xft:Terminus:style=Medium:pixelsize=14
 
 ! Fira Code
-! urxvt.font:        			  xft:Fira Code:style=Regular:size=8
-! urxvt.boldFont:    			  xft:Fira Code:style=Bold:size=8
+! urxvt.font:        			  xft:Fira Code:style=Regular:size=10
+! urxvt.boldFont:    			  xft:Fira Code:style=Bold:size=10
+
+! Courier
+! urxvt.font:        			  xft:Courier:style=Regular:size=10
+! urxvt.boldFont:    			  xft:Courier:style=Bold:size=10
 
 ! Overpass Mono
 ! urxvt.font:        			  xft:Overpass Mono:style=Regular:size=9
 ! urxvt.boldFont:    			  xft:Overpass Mono:style=Bold:size=9
 
-urxvt*letterSpace:   1
+! cherry
+! urxvt.font:        			  xft:cherry:style=Regular:pixelsize=18
+! urxvt.boldFont:    			  xft:cherry:style=Bold:pixelsize=18
+
+
+urxvt*letterSpace:   0
 urxvt*lineSpace:     0
 urxvt*cursorBlink: true
 urxvt*cursorUnderline: false

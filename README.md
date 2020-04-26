@@ -2,9 +2,9 @@
 
 [wallpaper](https://unsplash.com/photos/ciO5L8pin8A)
 
-![scrot](scrots/2020-04-26-172655_1920x1080_scrot.png)
-![scrot](scrots/2020-04-26-172736_1920x1080_scrot.png)
-![scrot](scrots/2020-04-26-172751_1920x1080_scrot.png)
+![scrot](scrots/scrot1.png)
+![scrot](scrots/scrot2.png)
+![scrot](scrots/scrot3.png)
 
 update the installation and enable nonfree repos for proprietary nvidia driver
 
@@ -17,7 +17,7 @@ sudo xbps-install -Su nvidia
 these are the packages you need to install on void to get my setup up and running
 
 ```
-sudo xbps-install -S lemonbar rofi bspwm sxhkd rxvt-unicode xorg-minimal xorg-fonts neofetch xwallpaper dunst picom ranger pywal zathura zathura-pdf-poppler git ImageMagick neovim cmark pulseaudio pavucontrol terminus-font stalonetray curl nodejs betterlockscreen redshift sxiv redshift-gtk w3m lxappearance papirus-icon-theme pcmanfm xarchiver gvfs p7zip libunarr xdo xtitle xclock dhcpcd-gtk scrot
+sudo xbps-install -S lemonbar rofi bspwm sxhkd rxvt-unicode xorg-minimal xorg-fonts neofetch xwallpaper dunst picom ranger pywal zathura zathura-pdf-poppler git ImageMagick neovim cmark pulseaudio pavucontrol terminus-font stalonetray curl nodejs betterlockscreen redshift sxiv redshift-gtk w3m lxappearance papirus-icon-theme pcmanfm xarchiver gvfs p7zip libunarr xdo xtitle xclock dhcpcd-gtk scrot pfetch
 ```
 
 get vimplug up and running
@@ -44,6 +44,7 @@ bspwm (window manager)
 rxvt-unicode (terminal emulator)
 
 neofetch (a fetch script)
+pfetch  (a smaller fetch script)
 
 xwallpaper (easily set wallpapers in X)
 
@@ -98,5 +99,6 @@ xarchiver (gui archive manager)
 - libunarr (rar support)
 
 dhcpcd-gtk (gui for network management with dhcpcd)
-`
+
 scrot  (screentshot utility)
+

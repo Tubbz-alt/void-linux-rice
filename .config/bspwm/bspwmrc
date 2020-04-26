@@ -9,8 +9,7 @@
 bash $HOME/Scripts/autostart
 
 # ---------------- bspc specifics --------------------------
-bspc monitor -d I II III IV V VI VII VIII IX X
-
+bspc monitor -d one two three
 bspc config border_width         1
 bspc config window_gap           24
 bspc config top_padding          48
