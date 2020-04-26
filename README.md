@@ -1,10 +1,16 @@
 ## README
 
+My rice on void linux
+
 [wallpaper from unsplash](https://unsplash.com/photos/ciO5L8pin8A)
 
 ![scrot](scrots/scrot3.png)
 ![scrot](scrots/scrot2.png)
 ![scrot](scrots/scrot1.png)
+
+## Steps to reproduce
+
+### Step 1: update installation add non free repo
 
 update the installation and enable nonfree repos for proprietary nvidia driver
 
@@ -14,11 +20,23 @@ sudo xbps-install -Su void-repo-nonfree
 sudo xbps-install -Su nvidia
 ```
 
+### Step 2: Install packages
+
 these are the packages you need to install on void to get my setup up and running
 
 ```
 sudo xbps-install -S lemonbar rofi bspwm sxhkd rxvt-unicode xorg-minimal xorg-fonts neofetch xwallpaper dunst picom ranger pywal zathura zathura-pdf-poppler git ImageMagick neovim cmark pulseaudio pavucontrol terminus-font stalonetray curl nodejs betterlockscreen redshift sxiv redshift-gtk w3m lxappearance papirus-icon-theme pcmanfm xarchiver gvfs p7zip libunarr xdo xtitle xclock dhcpcd-gtk scrot pfetch
 ```
+
+### Step 3: Clone this repository and copy the neseccary files
+
+clone this repository and copy the config files into their places
+
+**NB Very Important** copy the ``autostart`` script as well as the ``lemonbar-script`` in the ``Scripts/`` folder somewhere in your ``$PATH``
+
+### Step 4: get neovim up and running (optional)
+
+if you also want my neovim config then after copying that over you also need to do the following.
 
 get vimplug up and running after installing neovim
 
@@ -26,9 +44,12 @@ get vimplug up and running after installing neovim
 
 inside of neovim just execute ``:PlugInstall``
 
+if you want to use coc.nvim then [check out the repository to add the languages you need](https://github.com/neoclide/coc.nvim/wiki/Install-coc.nvim)
+
 
 ### explanation of packages
 
+```
 lemonbar (status bar)
 - xdo
 - xtitle
@@ -64,6 +85,7 @@ git (because you  probably need it to clone my configs)
 ImageMagick (i only really use the ``convert`` command to make solid color wallpapers)
 
 neovim (my text editor of choice)
+- nodejs (for coc.nvim)
 
 cmark (minimal markdown to html compiler for the commonmark implementation of markdown)
 
@@ -75,8 +97,6 @@ terminus-font (my monospace programming font of choice)
 stalonetray (this lets you have a system tray with lemonbar)
 
 curl (not sure why this isnt installed by default but you need it to get vim-plug working)
-
-nodejs (for coc.nvim)
 
 betterlockscreen (a simple and decent looking lockscreen)
 
@@ -101,3 +121,4 @@ xarchiver (gui archive manager)
 dhcpcd-gtk (gui for network management with dhcpcd)
 
 scrot  (screentshot utility)
+```
