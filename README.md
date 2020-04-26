@@ -1,7 +1,12 @@
 ## README
 
+[wallpaper](https://unsplash.com/photos/ciO5L8pin8A)
 
-update teh installation and enable nonfree repos for proprietary nvidia driver
+![scrot](scrots/2020-04-26-172655_1920x1080_scrot.png)
+![scrot](scrots/2020-04-26-172736_1920x1080_scrot.png)
+![scrot](scrots/2020-04-26-172751_1920x1080_scrot.png)
+
+update the installation and enable nonfree repos for proprietary nvidia driver
 
 ```
 sudo xbps-install -Su
