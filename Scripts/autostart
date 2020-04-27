@@ -44,7 +44,7 @@ betterlockscreen -u $HOME/wallpaper.jpg &
 xrdb ~/.Xresources # reload XResources colors
 
 # notifications daemon using pywal colors
-killall dunst
+pkill dunst
 dunst \
 	-lb "$BACKGROUND" \
 	-lf "$FOREGROUND" \
@@ -57,14 +57,14 @@ dunst \
 	-cfr "$RED" &
 
 # compositor
-killall picom
+pkill picom
 picom --config ~/.config/picom/picom.conf -b --experimental-backends --backend glx
 
 # eye saver
-# killall geoclue2
+# pkill geoclue2
 # exec /usr/lib/geoclue-2.0/demos/agent
-# killall redshift
-# killall redshift-gtk
+# pkill redshift
+# pkill redshift-gtk
 # redshift -r -P -l geoclue2 -m randr -t 4000k:25000k &
 # redshift-gtk & # applet
 
@@ -73,27 +73,26 @@ picom --config ~/.config/picom/picom.conf -b --experimental-backends --backend g
 
 # polybar
 
-# killall polybar # status bar
+# pkill polybar # status bar
 # polybar bar &
 
 # lemonbar
-killall lemonbar
+pkill lemonbar
 lemonbar-script &
 
-# killall stalonetray
-# killall nm-applet
+# pkill stalonetray
+# pkill nm-applet
 # nm-applet &
 # stalonetray -c ~/.config/.stalonetrayrc -bg "$background" &
 
 
 # ---------------- important startups ----------------------
 
-nm-applet & # network manager
 
 # xfce4-power-manager # power stuff for minimal wms
 # wmname compiz # fix java apps in minimal wms
 
-killall sxhkd
+pkill sxhkd
 sxhkd & # keyboard shortcuts
 
 # If you want to use GNOME config tools...
@@ -109,3 +108,6 @@ sxhkd & # keyboard shortcuts
 
 # eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
 # export SSH_AUTH_SOCK
+
+# ---------------- notfy user ----------------------
+notify-send "configs are loaded"
