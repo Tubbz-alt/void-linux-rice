@@ -1,6 +1,6 @@
 ## README
 
-My rice on void linux.
+My rice on void linux.If you want to know how I set up my dual boot with windows 10 [check here](https://github.com/kevin-nel/void-linux-rice/blob/master/dual_boot_void_win10_guide.md)
 
 [wallpaper from unsplash](https://unsplash.com/photos/ciO5L8pin8A)
 
