@@ -68,7 +68,7 @@ install the flatpak package as well as the xdg-desktop-portal packages (without 
 
 
 ```
-$ sudo  xbps-install -S flatpak xdg-dektop-portal xdg-dektop-portal-gtk
+$ sudo xbps-install -S flatpak xdg-desktop-portal xdg-desktop-portal-gtk xdg-user-dirs xdg-user-dirs-gtk xdg-utils
 ```
 
 Add the [flathub repository.](https://flatpak.org/setup/Void%20Linux/)
@@ -82,6 +82,37 @@ now to install a flatpak just run (note: I could not get flatpak to install appl
 
 ```
 $ sudo flatpak install <app_name>
+```
+
+if you have any issue [check the void wiki first](https://wiki.voidlinux.org/Flatpak)
+
+### bonus spotify flatpak
+
+My audio in the spotify flatpak didn't work so I had to follow [these steps to set up pulse audio correctly]().
+
+
+Install the necessary packages
+```
+$ sudo xbps-install -S alsa-utils pulseaudio ConsoleKit2
+```
+
+Enable the respective services
+```
+$ sudo ln -s /etc/sv/alsa /var/service/
+$ sudo ln -s /etc/sv/cgmanager /var/service/
+$ sudo ln -s /etc/sv/consolekit /var/service/
+```
+
+if you didn't enable dbus earlier enable the dbus service now.
+
+```
+$ sudo ln -s /etc/sv/dbus /var/service/
+```
+
+You may also have to run spotify like below and/or add ``start-pulseaudio-x11 &`` to your ``.xinitrc`` (I didn't have to do this)
+
+```
+$ pulseaudio --start && flatpak run com.spotify.Client
 ```
 
 ## Step 6: check if microcode has been installed
@@ -177,5 +208,4 @@ to see the list of explicitely installed packages on your system run the followi
 ```
 $ xbps-query -m
 ```
-
 the output of this command for my system is saved in ``packages.txt``
