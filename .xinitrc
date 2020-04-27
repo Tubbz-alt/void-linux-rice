@@ -29,5 +29,5 @@
 # ------------------------ switch WMs and DEs ---------------------------------
 
 
-exec bspwm # keep bspwm specific autostarts in .congif/bspwm/bspwmrc
 xsetroot -cursor_name left_ptr
+exec bspwm # keep bspwm specific autostarts in .congif/bspwm/bspwmrc

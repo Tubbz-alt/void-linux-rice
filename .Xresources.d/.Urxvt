@@ -4,7 +4,7 @@ urxvt*termName:         rxvt-unicode
 urxvt*saveline: 4096
 urxvt*loginShell: true
 
-urxvt*geometry:      80x24
+urxvt*geometry:      80x50
 urxvt*highlightSelection: true
 
 ! transparency and blur

@@ -32,6 +32,8 @@ alias grep='grep --color=auto'
 alias pacman='pacman --color=auto'
 
 
+alias la='ls -a'
+alias ll='ls -l'
 alias r='ranger-cd'
 alias q='exit'
 alias v=nvim

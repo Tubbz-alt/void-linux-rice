@@ -7,7 +7,7 @@ title=$(xdotool getwindowname $wid)
 case $class in
 	[Rr]edshift-*|[Gg]alculator|gnome-calculator|[Ff]eh|[Ss]xiv|xclock|XClock)
 		echo "state = floating"
-		echo "center = on"
+		echo "center = true"
 		;;
 	[Zz]athura)
 		echo "state = tiled"

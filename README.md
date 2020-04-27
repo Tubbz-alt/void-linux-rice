@@ -171,3 +171,11 @@ dhcpcd-gtk (gui for network management with dhcpcd)
 scrot  (screentshot utility)
 
 ```
+
+to see the list of explicitely installed packages on your system run the following command
+
+```
+$ xbps-query -m
+```
+
+the output of this command for my system is saved in ``packages.txt``

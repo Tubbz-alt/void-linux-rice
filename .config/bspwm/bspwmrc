@@ -39,3 +39,7 @@ bspc config focused_border_color "$color15"
 # ------------ external window rules ----------------------
 
 bspc config external_rules_command "$HOME"/.config/bspwm/external_rules
+
+# fix stuff with lemonbar
+[ -e "$PANEL_FIFO" ] && bspc subscribe report > "$PANEL_FIFO" &
+pgrep -x panel > /dev/null || panel &
