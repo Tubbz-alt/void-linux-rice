@@ -1,6 +1,6 @@
 ## README
 
-My rice on void linux
+My rice on void linux.
 
 [wallpaper from unsplash](https://unsplash.com/photos/ciO5L8pin8A)
 
@@ -21,8 +21,9 @@ $ sudo xbps-install -Su nvidia
 $ sudo xbps-install -Su base-devel
 ```
 
-Installing the base-devel package adds stuff like gcc and other utilities that are helpful if you program or if you will be compiling programs form source.
+Installing the base-devel package adds stuff like gcc and other utilities that are helpful if you program or if you will be compiling programs form source but it is optional
 
+if you would like to use the free nvidia (``nouveau``) drivers then install the ``xf86-video-nouveau`` package instead.
 
 ### Step 2: Install packages
 
@@ -82,6 +83,17 @@ now to install a flatpak just run (note: I could not get flatpak to install appl
 ```
 $ sudo flatpak install <app_name>
 ```
+
+## Step 6: check if microcode has been installed
+
+In my case void correctly installed the microcode packages without a hiccup.
+To check if void has correctly installed the microcode run the following
+
+```
+$ xbps-query -s linux-firmware
+```
+
+you should see the  ``linux-firmware-amd``, ``linux-firmware-intel``, and ``linux-firmware-nvidia`` packages with an ``*`` to indicate they are installed. (you may not need all the packages as this depends on your hardwar)
 
 
 ### explanation of packages
