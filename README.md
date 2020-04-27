@@ -23,14 +23,14 @@ $ sudo xbps-install -Su base-devel
 
 Installing the base-devel package adds stuff like gcc and other utilities that are helpful if you program or if you will be compiling programs form source but it is optional
 
-if you would like to use the free nvidia (``nouveau``) drivers then install the ``xf86-video-nouveau`` package instead.
+If you would like to use the free nvidia (``nouveau``) drivers then install the ``xf86-video-nouveau`` package instead.
 
 ### Step 2: Install packages
 
 these are the packages you need to install on void to get my setup up and running
 
 ```
-$ sudo xbps-install -S lemonbar rofi bspwm sxhkd rxvt-unicode xorg-minimal xorg-fonts neofetch xwallpaper dunst picom ranger pywal zathura zathura-pdf-poppler git ImageMagick neovim cmark pulseaudio pavucontrol terminus-font stalonetray curl nodejs betterlockscreen redshift sxiv redshift-gtk w3m lxappearance papirus-icon-theme pcmanfm xarchiver gvfs p7zip libunarr xdo xtitle xclock dhcpcd-gtk scrot pfetch
+$ sudo xbps-install -S lemonbar rofi bspwm sxhkd rxvt-unicode xorg-minimal dejavu-fonts-ttf neofetch xwallpaper dunst picom ranger pywal zathura zathura-pdf-poppler git ImageMagick neovim cmark pulseaudio pavucontrol terminus-font stalonetray curl nodejs betterlockscreen redshift sxiv redshift-gtk lxappearance papirus-icon-theme pcmanfm xarchiver gvfs p7zip libunarr xdo xtitle xclock dhcpcd-gtk scrot pfetch
 ```
 
 ### Step 3: Clone this repository and copy the neseccary files
@@ -108,7 +108,7 @@ rofi (application launcher)
 
 bspwm (window manager)
 - xorg-minimal (x server)
-- xorg-fonts (apps need fonts so you should probably install this or something else)
+- dejavu-fonts-ttf  (most apps need fonts adn this package provides alot of them without being too bloated)
 - sxhkd (hotkey daemon for bspwm)
 
 rxvt-unicode (terminal emulator)
@@ -153,8 +153,6 @@ redshift-gtk  (make you screen yellow at night)
 - redshift
 
 sxiv (simple image viewer for X, it has a neat gallery mode and opens images ina  reasonable size (whhc is helpful for tiling window managers))
-
-w3m (for ranger image preview to work you want this)
 
 lxappearance (to set your icon/gtk themes)
 
