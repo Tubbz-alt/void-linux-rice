@@ -26,6 +26,10 @@ super + @space
 super + BackSpace
 	rofimoji
 
+# clock
+super + x
+	xclock -geometry 200x200
+
 # media keys
 XF86AudioLowerVolume
 	amixer set Master 2%- && notify-send "volume -2%"

@@ -30,7 +30,7 @@ If you would like to use the free nvidia (``nouveau``) drivers then install the 
 these are the packages you need to install on void to get my setup up and running
 
 ```
-$ sudo xbps-install -S lemonbar rofi bspwm sxhkd rxvt-unicode xorg-minimal dejavu-fonts-ttf neofetch xwallpaper dunst picom ranger pywal zathura zathura-pdf-poppler git ImageMagick neovim cmark pulseaudio pavucontrol terminus-font stalonetray curl nodejs betterlockscreen redshift sxiv redshift-gtk lxappearance papirus-icon-theme pcmanfm xarchiver gvfs p7zip libunarr xdo xtitle xclock dhcpcd-gtk scrot pfetch
+$ sudo xbps-install -S lemonbar rofi bspwm sxhkd rxvt-unicode xorg-minimal dejavu-fonts-ttf neofetch xwallpaper dunst picom ranger pywal zathura zathura-pdf-poppler git ImageMagick neovim cmark pulseaudio pavucontrol terminus-font stalonetray curl nodejs betterlockscreen redshift sxiv redshift-gtk lxappearance papirus-icon-theme pcmanfm xarchiver gvfs p7zip libunarr xdo xtitle xclock dhcpcd-gtk scrot pfetch xdotool xdotool
 ```
 
 ### Step 3: Clone this repository and copy the neseccary files
@@ -110,6 +110,7 @@ bspwm (window manager)
 - xorg-minimal (x server)
 - dejavu-fonts-ttf  (most apps need fonts adn this package provides alot of them without being too bloated)
 - sxhkd (hotkey daemon for bspwm)
+- xdotool (window names for bspwm external rules)
 
 rxvt-unicode (terminal emulator)
 
@@ -168,4 +169,5 @@ xarchiver (gui archive manager)
 dhcpcd-gtk (gui for network management with dhcpcd)
 
 scrot  (screentshot utility)
+
 ```

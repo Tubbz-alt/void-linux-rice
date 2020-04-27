@@ -5,9 +5,12 @@ instance=$3
 title=$(xdotool getwindowname $wid)
 
 case $class in
-	[Rr]edshift-*|[Gg]alculator|gnome-calculator|[Ff]eh|[Ss]xiv)
+	[Rr]edshift-*|[Gg]alculator|gnome-calculator|[Ff]eh|[Ss]xiv|xclock|XClock)
 		echo "state = floating"
 		echo "center = on"
+		;;
+	[Zz]athura)
+		echo "state = tiled"
 		;;
 	[Mm]pv)
 		echo "sticky = on"
@@ -17,9 +20,9 @@ case $class in
 		echo "desktop = ^3"
 		;;
 	discord)
-		echo "desktop = ^5"
+		echo "desktop = ^2"
 		;;
 	spotify)
-		echo "desktop = ^5"
+		echo "desktop = ^2"
 esac
 
