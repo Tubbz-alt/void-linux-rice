@@ -14,7 +14,7 @@ configuration{
     normal-foreground:           @foreground;
     alternate-normal-foreground: @foreground;
     spacing:                     40px;
-    font: 						 "Overpass 16";
+    font: 						 "Terminus 16";
     text-color: 				 @normal-foreground;
 }
 
